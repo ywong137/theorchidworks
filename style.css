@@ -1,4 +1,3 @@
-/* Import Lora font */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
 body {
@@ -42,29 +41,131 @@ main {
     margin: 0 auto;
 }
 
-/* Shop Page */
-.shop-gallery {
+/* INDEX PAGE (hero, about, gallery, cta) */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.about-image, .about-text {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cta {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.cta .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* SHOP PAGE */
+.shop-categories {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
-}
-
-.shop-gallery img {
-    width: 250px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    object-fit: cover;
+    padding: 20px;
 }
 
 .shop-category {
     text-align: center;
-    font-weight: 700;
+    flex: 1 1 250px;
+    max-width: 250px;
 }
 
-/* Contact Page */
+.shop-category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ordering-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.ordering-section img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.ordering-text {
+    max-width: 400px;
+}
+
+/* CONTACT PAGE */
 .contact-page {
     max-width: 800px;
     margin: 0 auto;
@@ -79,7 +180,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* Alternate Contact Page Block */
 .contact-page main {
     display: flex;
     flex-direction: column;
@@ -100,7 +200,7 @@ main {
     width: 100%;
 }
 
-/* Form Styles */
+/* FORM SHARED */
 input[type="text"],
 input[type="email"],
 select,
@@ -123,7 +223,6 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
-    font-family: 'Lora', serif;
 }
 
 input[type="submit"]:hover,
@@ -131,25 +230,26 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Footer */
+/* FOOTER */
 footer p {
     margin: 10px 0;
     font-size: 0.9rem;
 }
 
-/* Mobile First */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .shop-gallery {
+    .about {
         flex-direction: column;
-        align-items: center;
     }
-
-    .contact-page main {
-        padding: 10px;
+    .ordering-section {
+        flex-direction: column;
+    }
+    .shop-categories {
+        flex-direction: column;
     }
 }
 
-/* General site padding to avoid content edge collisions */
+/* SITEWIDE SAFETY PADDING */
 body, main {
     padding-left: 20px;
     padding-right: 20px;
