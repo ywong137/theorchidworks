@@ -1,245 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
-/* Reset and base styles */
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Import Lora font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
 body {
     font-family: 'Lora', serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #fff;
     color: #333;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.hero .button {
+header, footer {
+    background-color: #f5f5f5;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* About Section */
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-    align-items: center;
-}
-
-.about-image, .about-text {
-    flex: 1 1 300px;
-    padding: 10px;
-}
-
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 40px 20px;
     text-align: center;
 }
 
-.gallery h2 {
-    margin-bottom: 20px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* CTA Section */
-.cta {
-    background-color: #4CAF50;
-    color: white;
+nav {
     text-align: center;
-    padding: 30px 20px;
+    padding: 10px 0;
 }
 
-.cta .button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: white;
-    color: #4CAF50;
+nav a {
+    margin: 0 15px;
     text-decoration: none;
-    border-radius: 5px;
+    color: #333;
     font-weight: bold;
 }
 
-/* Footer */
-footer {
+h1, h2, h3 {
     text-align: center;
+    font-weight: 700;
+}
+
+p, label {
+    font-size: 1rem;
+}
+
+main {
     padding: 20px;
-    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-footer img {
-    margin-top: 10px;
-    max-height: 50px;
-}
-
-/* Shop Page Layout */
-.shop-header {
-    text-align: center;
-    padding: 40px 20px 20px;
-}
-
-.shop-categories {
+/* Shop Page */
+.shop-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    margin-top: 20px;
+}
+
+.shop-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
 }
 
 .shop-category {
     text-align: center;
-    flex: 1 1 250px;
-    max-width: 250px;
+    font-weight: 700;
 }
 
-.shop-category img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.ordering-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    gap: 20px;
-}
-
-.ordering-section img {
-    max-width: 400px;
-    border-radius: 8px;
-}
-
-.ordering-text {
-    max-width: 400px;
-}
-
-form {
-    display: grid;
-    gap: 10px;
+/* Contact Page */
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+.contact-page h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info, .contact-form {
+    margin-bottom: 30px;
+}
+
+/* Alternate Contact Page Block */
+.contact-page main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     max-width: 600px;
     margin: 0 auto;
 }
 
+.contact-page section.about {
+    margin-bottom: 20px;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Form Styles */
 input[type="text"],
 input[type="email"],
 select,
-input[type="file"] {
-    width: 100%;
-    padding: 8px;
+textarea {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-input[type="submit"] {
-    padding: 10px 20px;
+input[type="submit"],
+button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+button:hover {
     background-color: #45a049;
 }
 
-label {
-    font-weight: bold;
+/* Footer */
+footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
 }
 
+/* Mobile First */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.2em;
-    }
-
-    .about {
+    .shop-gallery {
         flex-direction: column;
+        align-items: center;
     }
 
-    .ordering-section {
-        flex-direction: column;
+    .contact-page main {
+        padding: 10px;
     }
 }
 
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
+/* General site padding to avoid content edge collisions */
+body, main {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-.contact-info, .contact-form {
-    flex: 1 1 300px;
-}
-
-.contact-info {
-    font-size: 1rem;
-    line-height: 1.6;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.contact-wrapper {
-    padding: 0 20px;
-}
-
