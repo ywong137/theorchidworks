@@ -125,6 +125,85 @@ footer img {
     max-height: 50px;
 }
 
+/* Shop Page Layout */
+.shop-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.shop-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.shop-category {
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 250px;
+}
+
+.shop-category img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ordering-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.ordering-section img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.ordering-text {
+    max-width: 400px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+label {
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2em;
@@ -133,24 +212,8 @@ footer img {
     .about {
         flex-direction: column;
     }
-}
 
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-form input, form select, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-form label {
-    font-weight: bold;
+    .ordering-section {
+        flex-direction: column;
+    }
 }
