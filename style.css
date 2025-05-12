@@ -17,6 +17,7 @@ header, footer {
 nav {
     text-align: center;
     padding: 10px 0;
+    background-color: #f8f8f8;
 }
 
 nav a {
