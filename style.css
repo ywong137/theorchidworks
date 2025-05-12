@@ -284,6 +284,10 @@ body, main {
     text-align: left;
 }
 
+.orchid-text h2 {
+    margin-top: 0px;
+}
+
 /* Special case: vertically center intro block text */
 .orchid-intro {
     align-items: center;
