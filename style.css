@@ -306,7 +306,9 @@ body, main {
 }
 
 /* Left-align heading on desktop only */
-.orchid-text h2 {
-    text-align: left;
+@media (min-width: 769px) {
+    .orchid-text h2 {
+        text-align: left;
+    }
 }
 
