@@ -284,10 +284,6 @@ body, main {
     text-align: left;
 }
 
-.orchid-text h2 {
-    text-align: left;
-}
-
 /* Special case: vertically center intro block text */
 .orchid-intro {
     align-items: center;
@@ -304,7 +300,13 @@ body, main {
         max-width: 100%;
     }
 
-    .orchid-text {
-        text-align: center; !important;
+    main .orchid-section .orchid-text {
+        text-align: center;
     }
 }
+
+/* Left-align heading on desktop only */
+.orchid-text h2 {
+    text-align: left;
+}
+
