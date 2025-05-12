@@ -305,6 +305,6 @@ body, main {
     }
 
     .orchid-text {
-        text-align: center;
+        text-align: center; !important;
     }
 }
