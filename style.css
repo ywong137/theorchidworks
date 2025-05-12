@@ -37,9 +37,9 @@ p, label {
 }
 
 main {
-    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* INDEX PAGE (hero, about, gallery, cta) */
@@ -263,12 +263,6 @@ footer p {
     .shop-categories {
         flex-direction: column;
     }
-}
-
-/* SITEWIDE SAFETY PADDING */
-body, main {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 /* Orchid Care Page Layout */
