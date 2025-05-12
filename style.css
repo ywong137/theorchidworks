@@ -262,3 +262,44 @@ body, main {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* Orchid Care Page Layout */
+.orchid-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.orchid-section img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.orchid-text {
+    flex: 1;
+}
+
+/* Special case: vertically center intro block text */
+.orchid-intro {
+    align-items: center;
+}
+
+/* Mobile responsive: stack image and text */
+@media (max-width: 768px) {
+    .orchid-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orchid-section img {
+        max-width: 100%;
+    }
+
+    .orchid-text {
+        text-align: center;
+    }
+}
