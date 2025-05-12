@@ -44,7 +44,7 @@ main {
 
 /* INDEX PAGE (hero, about, gallery, cta) */
 .hero {
-    height: 100vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -90,7 +90,10 @@ main {
 }
 
 .about-image img {
-    max-width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
