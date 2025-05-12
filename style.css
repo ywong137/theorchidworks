@@ -266,7 +266,7 @@ body, main {
 /* Orchid Care Page Layout */
 .orchid-section {
     display: flex;
-    gap: 30px;
+    gap: 20vw; /* 20% viewport width, as opposed to 300px - let's try */
     align-items: flex-start;
     margin-bottom: 40px;
 }
