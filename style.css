@@ -300,7 +300,7 @@ body, main {
         max-width: 100%;
     }
 
-    main .orchid-section .orchid-text {
+    main .orchid-section .orchid-text h2 {
         text-align: center;
     }
 }
