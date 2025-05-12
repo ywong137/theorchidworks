@@ -141,6 +141,7 @@ main {
     text-align: center;
     flex: 1 1 250px;
     max-width: 250px;
+    margin: 0 auto; /* added */
 }
 
 .shop-category img {
@@ -148,13 +149,11 @@ main {
     border-radius: 8px;
 }
 
-.ordering-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    gap: 20px;
+.ordering-section img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
 .ordering-section img {
@@ -229,6 +228,14 @@ button {
 input[type="submit"]:hover,
 button:hover {
     background-color: #45a049;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea,
+form input[type="file"] {
+    margin-bottom: 12px;
 }
 
 /* FOOTER */
